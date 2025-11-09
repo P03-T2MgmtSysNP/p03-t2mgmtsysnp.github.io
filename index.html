@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>P03 – T2 – Management System for Nonprofits</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="CS 4850-04 – Fall 2025 project: Management System for Nonprofits.">
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="#top">P03‑T2MgmtSysNP</a>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#requirements">Requirements</a></li>
+          <li><a href="#design">Design</a></li>
+          <li><a href="#development">Development</a></li>
+          <li><a href="#demo">Demo</a></li>
+          <li><a href="#docs">Docs</a></li>
+          <li><a href="#team">Team</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <h1>Management System for Nonprofits</h1>
+        <p class="small">CS 4850‑04 • Fall 2025 • Prototype Presentation • Instructor: Sharon Perry</p>
+        <div class="badges">
+          <span class="badge">Low‑cost</span>
+          <span class="badge">User‑friendly</span>
+          <span class="badge">Data relationships</span>
+          <span class="badge">Low‑code</span>
+          <span class="badge">Documentation‑heavy</span>
+          <span class="badge">Analysis‑first</span>
+        </div>
+        <div style="margin-top:16px">
+          <a class="btn" href="#demo">View Demo Plan</a>
+          <a class="btn secondary" href="#requirements" style="margin-left:8px">See Requirements</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>Introduction & Problem Statement</h2>
+        <p class="lead">We need a low‑cost, user‑friendly management system where organizational data can be uploaded, stored, and visualized with clear relationships.</p>
+        <div class="grid">
+          <div class="card">
+            <h3>Constraints & Characteristics</h3>
+            <ul class="tight">
+              <li>Low‑code project</li>
+              <li>Documentation‑heavy</li>
+              <li>Analysis‑based</li>
+              <li>Consultancy‑style engagement</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Lifecycle Focus</h3>
+            <p class="small">Planning → Analysis → Design → Implementation → Testing → Maintenance</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="requirements" class="section">
+      <div class="container">
+        <h2>Requirements</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>3.1 Platform Assessment</h3>
+            <ul class="tight">
+              <li>Define a clear evaluation framework.</li>
+              <li>Deliver a final recommendation with justification.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>3.2 Proof of Concept (POC)</h3>
+            <ul class="tight">
+              <li>Demonstrate workflows for: event tracking, communication, data import/export, sponsor, volunteer, and donor tracking.</li>
+              <li>Remain flexible and editable after fulfillment of other requirements.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>3.3 Documentation</h3>
+            <ul class="tight">
+              <li>Provide guidance on use of platform options.</li>
+              <li><strong>Final recommendation</strong> receives a more extensive usage guide.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Integration & Qualities</h3>
+            <ul class="tight">
+              <li>Google Workspace integration</li>
+              <li>Ease of use; scalable & flexible</li>
+              <li>Mailchimp integration (where applicable)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="design" class="section">
+      <div class="container">
+        <h2>Design: Data Integration Plan</h2>
+        <p class="lead">Goal: Create a data integration plan with token/field translation to fit HubSpot’s schema.</p>
+        <div class="grid">
+          <div class="card">
+            <h3>Step 1 — Interpretation</h3>
+            <ul class="tight">
+              <li>Determine which spreadsheet columns map into the CRM lexicon.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Step 2 — Conversion</h3>
+            <ul class="tight">
+              <li>Translate headers; convert to <code class="inline">.csv</code> for import.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Step 3 — Mapping</h3>
+            <ul class="tight">
+              <li>Connect CRM attributes, keys, and objects; set relationships.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Step 4 — Deployment & QA</h3>
+            <ul class="tight">
+              <li>Import and accept data in HubSpot; verify object‑to‑object mapping.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="development" class="section">
+      <div class="container">
+        <h2>Development: Project Setup</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>1) Create a Free HubSpot Account</h3>
+            <p class="small">Team members can collaborate inside a shared portal.</p>
+          </div>
+          <div class="card">
+            <h3>2) Prepare the Data</h3>
+            <p class="small">Use Microsoft Excel or Google Sheets as your source data.</p>
+          </div>
+          <div class="card">
+            <h3>3) Import via HubSpot</h3>
+            <p class="small">Use HubSpot’s Data Integration to configure and import your spreadsheet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo" class="section">
+      <div class="container">
+        <h2>Demo Plan</h2>
+        <p class="lead">Live example: migrate a Google Sheet into HubSpot and validate relationships.</p>
+        <ul class="tight">
+          <li>Show mapping of columns to CRM objects and properties.</li>
+          <li>Import, then verify the integrity of linked records (sponsors, volunteers, donors).</li>
+          <li>Demonstrate event and communication tracking.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="docs" class="section">
+      <div class="container">
+        <h2>Documentation & Next Steps</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Next Steps</h3>
+            <ul class="tight">
+              <li>Finalize POC scenarios.</li>
+              <li>Expand usage documentation for the selected platform.</li>
+              <li>Publish artifacts (slides, diagrams) into the <code class="inline">/docs</code> folder.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Artifacts</h3>
+            <p class="small">Add your presentation PDF and any reports to <code class="inline">/docs</code>, then link them here.</p>
+            <ul class="tight">
+              <li><a href="docs/Project Management Roadmap.pdf" target="_blank" rel="noopener">Prototype Presentation (PDF)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="section">
+      <div class="container">
+        <h2>Team</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Contributors</h3>
+            <ul class="tight">
+              <li>Evan Conley</li>
+              <li>Tyler Stroud</li>
+              <li>Ella Goode</li>
+              <li>Fatih Kurt</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Course</h3>
+            <p class="small">CS 4850‑04 — Fall 2025</p>
+            <p class="small">Instructor: Sharon Perry</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© 2025 P03‑T2MgmtSysNP • Built for academic demonstration.</div>
+      <div class="small">Hosted on GitHub Pages.</div>
+    </div>
+  </footer>
+</body>
+</html>
