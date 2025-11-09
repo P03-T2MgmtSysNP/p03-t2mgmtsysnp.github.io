@@ -13,7 +13,6 @@ This repository hosts the public website for **Management System for Nonprofits*
 ## Edit Content
 - Main page: `index.html`
 - Styles: `css/styles.css`
-- Add images to: `/img`
 - Upload reports/slides into: `/docs` and link them in the **Documentation** section of `index.html`.
 
 ## Team
