@@ -3,22 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>P03 – T2 – Management System for Nonprofits</title>
+  <title>P03 – Management System for Nonprofits</title>
   <link rel="stylesheet" href="css/styles.css">
-  <meta name="description" content="CS 4850-04 – Fall 2025 project: Management System for Nonprofits.">
+  <meta name="description" content="CS 4850-04 – Fall 2025 project: Management System for Nonprofits for the Georgia Laws of Life Essay Contest.">
 </head>
 <body>
   <header>
     <div class="container navbar">
-      <a class="brand" href="#top">P03‑T2MgmtSysNP</a>
+      <a class="brand" href="#top">P03-T2MgmtSysNP</a>
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#requirements">Requirements</a></li>
-          <li><a href="#design">Design</a></li>
-          <li><a href="#development">Development</a></li>
-          <li><a href="#demo">Demo</a></li>
-          <li><a href="#docs">Docs</a></li>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#docs">Documents</a></li>
           <li><a href="#team">Team</a></li>
         </ul>
       </nav>
@@ -26,253 +23,266 @@
   </header>
 
   <main id="top">
-    <section class="hero">
+    <!-- HERO -->
+    <section class="hero" id="overview">
       <div class="container">
         <h1>Management System for Nonprofits</h1>
-        <p class="small">CS 4850‑04 • Fall 2025 • Prototype Presentation • Instructor: Sharon Perry</p>
+        <p class="small">
+          CS 4850-04 • Fall 2025 • Georgia Laws of Life Essay Contest<br>
+          Instructor: Sharon Perry
+        </p>
         <div class="badges">
-          <span class="badge">Low‑cost</span>
-          <span class="badge">User‑friendly</span>
-          <span class="badge">Data relationships</span>
-          <span class="badge">Low‑code</span>
-          <span class="badge">Documentation‑heavy</span>
-          <span class="badge">Analysis‑first</span>
+          <span class="badge">Low-cost</span>
+          <span class="badge">User-friendly</span>
+          <span class="badge">Data integration</span>
+          <span class="badge">Low-code</span>
+          <span class="badge">HubSpot CRM</span>
         </div>
         <div style="margin-top:16px">
-          <a class="btn" href="#demo">View Demo Plan</a>
-          <a class="btn secondary" href="#requirements" style="margin-left:8px">See Requirements</a>
+          <a class="btn" href="#timeline">View Semester Progress</a>
+          <a class="btn secondary" href="#docs" style="margin-left:8px">Open Project Documents</a>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section">
+    <!-- PROJECT OVERVIEW -->
+    <section class="section">
       <div class="container">
-        <h2>Introduction & Problem Statement</h2>
-        <p class="lead">We need a low‑cost, user‑friendly management system where organizational data can be uploaded, stored, and visualized with clear relationships.</p>
-        <div class="grid">
-          <div class="card">
-            <h3>Constraints & Characteristics</h3>
-            <ul class="tight">
-              <li>Low‑code project</li>
-              <li>Documentation‑heavy</li>
-              <li>Analysis‑based</li>
-              <li>Consultancy‑style engagement</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Lifecycle Focus</h3>
-            <p class="small">Planning → Analysis → Design → Implementation → Testing → Maintenance</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="requirements" class="section">
-      <div class="container">
-        <h2>Requirements</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>3.1 Platform Assessment</h3>
-            <ul class="tight">
-              <li>Define a clear evaluation framework.</li>
-              <li>Deliver a final recommendation with justification.</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>3.2 Proof of Concept (POC)</h3>
-            <ul class="tight">
-              <li>Demonstrate workflows for: event tracking, communication, data import/export, sponsor, volunteer, and donor tracking.</li>
-              <li>Remain flexible and editable after fulfillment of other requirements.</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>3.3 Documentation</h3>
-            <ul class="tight">
-              <li>Provide guidance on use of platform options.</li>
-              <li><strong>Final recommendation</strong> receives a more extensive usage guide.</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Integration & Qualities</h3>
-            <ul class="tight">
-              <li>Google Workspace integration</li>
-              <li>Ease of use; scalable & flexible</li>
-              <li>Mailchimp integration (where applicable)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="design" class="section">
-      <div class="container">
-        <h2>Design: Data Integration Plan</h2>
-        <p class="lead">Goal: Create a data integration plan with token/field translation to fit HubSpot’s schema.</p>
-        <div class="grid">
-          <div class="card">
-            <h3>Step 1 — Interpretation</h3>
-            <ul class="tight">
-              <li>Determine which spreadsheet columns map into the CRM lexicon.</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Step 2 — Conversion</h3>
-            <ul class="tight">
-              <li>Translate headers; convert to <code class="inline">.csv</code> for import.</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Step 3 — Mapping</h3>
-            <ul class="tight">
-              <li>Connect CRM attributes, keys, and objects; set relationships.</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Step 4 — Deployment & QA</h3>
-            <ul class="tight">
-              <li>Import and accept data in HubSpot; verify object‑to‑object mapping.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="development" class="section">
-      <div class="container">
-        <h2>Development: Project Setup</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>1) Create a Free HubSpot Account</h3>
-            <p class="small">Team members can collaborate inside a shared portal.</p>
-          </div>
-          <div class="card">
-            <h3>2) Prepare the Data</h3>
-            <p class="small">Use Microsoft Excel or Google Sheets as your source data.</p>
-          </div>
-          <div class="card">
-            <h3>3) Import via HubSpot</h3>
-            <p class="small">Use HubSpot’s Data Integration to configure and import your spreadsheet.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="demo" class="section">
-      <div class="container">
-        <h2>Demo Plan</h2>
-        <p class="lead">Live example: migrate a Google Sheet into HubSpot and validate relationships.</p>
-        <ul class="tight">
-          <li>Show mapping of columns to CRM objects and properties.</li>
-          <li>Import, then verify the integrity of linked records (sponsors, volunteers, donors).</li>
-          <li>Demonstrate event and communication tracking.</li>
-        </ul>
-      </div>
-    </section>
-
-        <section id="docs" class="section">
-      <div class="container">
-        <h2>Project Documentation Timeline</h2>
+        <h2>Project Overview</h2>
         <p class="lead">
-          This website collects all major project deliverables from the initial planning phase 
-          through the final package delivered to our client.
+          The goal of this project is to design and prototype a low-cost, user-friendly management
+          system for the Georgia Laws of Life Essay Contest. The system needs to consolidate data
+          that currently lives in multiple spreadsheets into a single CRM environment where
+          sponsors, volunteers, donors, and communications can be tracked efficiently.
+        </p>
+        <div class="grid">
+          <div class="card">
+            <h3>Problem</h3>
+            <ul class="tight">
+              <li>Data spread across many spreadsheets.</li>
+              <li>Limited visibility into relationships between schools, sponsors, and contacts.</li>
+              <li>Manual processes for communication and reporting.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Solution Approach</h3>
+            <ul class="tight">
+              <li>Evaluate multiple CRM platforms against client needs.</li>
+              <li>Select a low-code, scalable CRM (HubSpot) as the primary platform.</li>
+              <li>Design data models, integrations, and workflows for the client’s context.</li>
+              <li>Implement and test a proof-of-concept configuration.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEMESTER TIMELINE -->
+    <section id="timeline" class="section">
+      <div class="container">
+        <h2>Semester Timeline</h2>
+        <p class="lead">
+          The following phases show how the project evolved from initial planning to the final package
+          delivered to our client.
+        </p>
+
+        <div class="grid">
+          <!-- Phase 1 -->
+          <div class="card">
+            <h3>1. Project Planning</h3>
+            <p class="small">
+              At the beginning of the semester, we defined the scope, stakeholders, constraints,
+              risks, and schedule for the Management System for Nonprofits project. A detailed
+              Gantt chart was created to estimate effort, sequence tasks, and align milestones
+              with course deliverables and sponsor expectations.
+            </p>
+            <p class="small">
+              Key artifacts:
+              <br>
+              <a href="docs/03-ManagementSystemforNonProfits-ProjectPlan.pdf" target="_blank" rel="noopener">
+                Project Plan (PDF)
+              </a>
+              <br>
+              <a href="docs/03-ManagementSystemForNonProfits-GanttChart-Estimate.xlsx" target="_blank" rel="noopener">
+                Gantt Chart / Schedule (Excel)
+              </a>
+            </p>
+          </div>
+
+          <!-- Phase 2 -->
+          <div class="card">
+            <h3>2. Requirements, Analysis & Design (RAD, SRS, SDD)</h3>
+            <p class="small">
+              Next, we gathered and documented detailed functional and non-functional requirements,
+              analyzed the client’s current processes, and designed a conceptual solution. The
+              Software Requirements Specification (SRS) captures what the system must do, while the
+              Software Design Document (SDD) describes how the system will be organized within the
+              selected CRM platform, including key entities, relationships, and workflows.
+            </p>
+            <p class="small">
+              Key artifacts:
+              <br>
+              <a href="docs/P03-T2MgmtSysNP-Requirements.pdf" target="_blank" rel="noopener">
+                Software Requirements Specification (SRS) (PDF)
+              </a>
+              <br>
+              <a href="docs/03-ManagementSystemforNonProfits-Design.pdf" target="_blank" rel="noopener">
+                Software Design Document (SDD) (PDF)
+              </a>
+            </p>
+          </div>
+
+          <!-- Phase 3 -->
+          <div class="card">
+            <h3>3. Development & Configuration</h3>
+            <p class="small">
+              During the development phase, we implemented the proposed solution within HubSpot.
+              This included configuring objects and properties, mapping spreadsheet fields into the
+              CRM schema, setting up lists and pipelines, and preparing the environment for data
+              import and future automation. The Development Document explains the configuration
+              decisions and how they support the documented requirements.
+            </p>
+            <p class="small">
+              Key artifact:
+              <br>
+              <a href="docs/P03-T2-Mgmt-Sys-NP-Development.pdf" target="_blank" rel="noopener">
+                Development Document (PDF)
+              </a>
+            </p>
+          </div>
+
+          <!-- Phase 4 -->
+          <div class="card">
+            <h3>4. Prototype & In-Class Presentation</h3>
+            <p class="small">
+              After initial configuration, we prepared a working prototype to demonstrate to the
+              class and our sponsors. The prototype showed how data from Google Sheets could be
+              translated and imported into HubSpot, how contacts and organizations are linked, and
+              how the system supports the Georgia Laws of Life Essay Contest workflows.
+            </p>
+            <p class="small">
+              Key artifact:
+              <br>
+              <a href="docs/Project Management Roadmap.pdf" target="_blank" rel="noopener">
+                Prototype Presentation – Project Management Roadmap (PDF)
+              </a>
+            </p>
+          </div>
+
+          <!-- Phase 5 -->
+          <div class="card">
+            <h3>5. Testing (STP & STR)</h3>
+            <p class="small">
+              We then developed a System Test Plan (STP) and executed test cases to verify that the
+              configured solution met the documented requirements. The System Test Report (STR)
+              summarizes test results, identifies any issues discovered during testing, and records
+              evidence for how the system behaves under realistic usage scenarios.
+            </p>
+            <p class="small">
+              Key artifact:
+              <br>
+              <a href="docs/P03-T2-Mgmy-Sys-NP-STP-STR.pdf" target="_blank" rel="noopener">
+                System Test Plan & System Test Report (STP & STR) (PDF)
+              </a>
+            </p>
+          </div>
+
+          <!-- Phase 6 -->
+          <div class="card">
+            <h3>6. Final Package & Client Handoff</h3>
+            <p class="small">
+              Finally, we compiled the project results into a comprehensive final report and package
+              for the client. This final package summarizes the problem context, requirements,
+              design, development approach, testing activities, and our recommendations for the
+              Georgia Laws of Life Essay Contest going forward. The project website you are viewing
+              is included as part of that final deliverable.
+            </p>
+            <p class="small">
+              Key artifact:
+              <br>
+              <a href="docs/P03-T2MgmtSysNP-FinalReport.pdf" target="_blank" rel="noopener">
+                Final Report / Final Package (PDF)
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOCUMENTS (INDEX / QUICK ACCESS) -->
+    <section id="docs" class="section">
+      <div class="container">
+        <h2>Project Documents (Quick Access)</h2>
+        <p class="lead">
+          All major documents are listed here for quick reference. They are organized using the
+          same phases shown in the semester timeline above.
         </p>
 
         <div class="grid">
           <!-- 1. Project Plan -->
           <div class="card">
-            <h3>1. Project Plan</h3>
-            <p class="small">
-              Defines the scope, objectives, stakeholders, risks, schedule, and overall approach
-              for the Management System for Nonprofits project, including the initial Gantt
-              chart and task planning.
-            </p>
+            <h3>Project Plan</h3>
             <p class="small">
               <a href="docs/03-ManagementSystemforNonProfits-ProjectPlan.pdf" target="_blank" rel="noopener">
-                View Project Plan (PDF)
+                Project Plan (PDF)
               </a>
               <br>
               <a href="docs/03-ManagementSystemForNonProfits-GanttChart-Estimate.xlsx" target="_blank" rel="noopener">
-                View Gantt Chart / Schedule (Excel)
+                Gantt Chart / Schedule (Excel)
               </a>
             </p>
           </div>
 
-          <!-- 2. Requirements / Analysis / Design -->
+          <!-- 2. RAD / SRS / SDD -->
           <div class="card">
-            <h3>2. RAD / SRS / SDD</h3>
-            <p class="small">
-              Requirements / Analysis / Design documentation, including the Software Requirements
-              Specification (SRS) and Software Design Document (SDD). Together, these capture
-              functional and non-functional requirements, constraints, and the high-level system
-              architecture and subsystems.
-            </p>
+            <h3>Requirements / Analysis / Design</h3>
             <p class="small">
               <a href="docs/P03-T2MgmtSysNP-Requirements.pdf" target="_blank" rel="noopener">
-                View Software Requirements Specification (SRS) (PDF)
+                Software Requirements Specification (SRS) (PDF)
               </a>
               <br>
               <a href="docs/03-ManagementSystemforNonProfits-Design.pdf" target="_blank" rel="noopener">
-                View Software Design Document (SDD) (PDF)
+                Software Design Document (SDD) (PDF)
               </a>
             </p>
           </div>
 
-          <!-- 3. Development Document -->
+          <!-- 3. Development -->
           <div class="card">
-            <h3>3. Development Document</h3>
-            <p class="small">
-              Describes how the proposed solution was implemented within HubSpot, including
-              platform evaluation, data model configuration, integration design, and detailed
-              setup steps for importing and managing data in the POC environment.
-            </p>
+            <h3>Development</h3>
             <p class="small">
               <a href="docs/P03-T2-Mgmt-Sys-NP-Development.pdf" target="_blank" rel="noopener">
-                View Development Document (PDF)
+                Development Document (PDF)
               </a>
             </p>
           </div>
 
           <!-- 4. Prototype Presentation -->
           <div class="card">
-            <h3>4. Prototype Presentation (In-Class)</h3>
-            <p class="small">
-              In-class presentation slides summarizing the problem context, constraints,
-              requirements, design decisions, and a live demonstration plan for migrating
-              data from Google Sheets into HubSpot.
-            </p>
+            <h3>Prototype Presentation</h3>
             <p class="small">
               <a href="docs/Project Management Roadmap.pdf" target="_blank" rel="noopener">
-                View Prototype Presentation (PDF)
+                Prototype Presentation – Project Management Roadmap (PDF)
               </a>
             </p>
           </div>
 
-          <!-- 5. Test Plan and Report -->
+          <!-- 5. STP / STR -->
           <div class="card">
-            <h3>5. Test Plan & Report (STP & STR)</h3>
-            <p class="small">
-              System Test Plan (STP) and System Test Report (STR) describing test scope,
-              test cases for data import, Mailchimp integration, contact creation, test
-              procedures, environment, and test results for the configured HubSpot solution.
-            </p>
+            <h3>Testing – STP & STR</h3>
             <p class="small">
               <a href="docs/P03-T2-Mgmy-Sys-NP-STP-STR.pdf" target="_blank" rel="noopener">
-                View STP & STR (PDF)
+                System Test Plan & System Test Report (PDF)
               </a>
             </p>
           </div>
 
           <!-- 6. Final Package -->
           <div class="card">
-            <h3>6. Final Package</h3>
-            <p class="small">
-              Final report summarizing background, objectives, requirements, design, development,
-              testing, and overall recommendations for Georgia Laws of Life, along with links to
-              the project website and GitHub resources.
-            </p>
+            <h3>Final Package</h3>
             <p class="small">
               <a href="docs/P03-T2MgmtSysNP-FinalReport.pdf" target="_blank" rel="noopener">
-                View Final Report / Final Package (PDF)
+                Final Report / Final Package (PDF)
               </a>
             </p>
           </div>
@@ -280,6 +290,7 @@
       </div>
     </section>
 
+    <!-- TEAM -->
     <section id="team" class="section">
       <div class="container">
         <h2>Team</h2>
@@ -294,8 +305,8 @@
             </ul>
           </div>
           <div class="card">
-            <h3>Course</h3>
-            <p class="small">CS 4850‑04 — Fall 2025</p>
+            <h3>Course Information</h3>
+            <p class="small">CS 4850-04 — Fall 2025</p>
             <p class="small">Instructor: Sharon Perry</p>
           </div>
         </div>
@@ -305,8 +316,8 @@
 
   <footer>
     <div class="container">
-      <div>© 2025 P03‑T2MgmtSysNP • Built for academic demonstration.</div>
-      <div class="small">Hosted on GitHub Pages.</div>
+      <div>© 2025 P03-T2MgmtSysNP • Management System for Nonprofits</div>
+      <div class="small">Project website created as part of CS 4850-04, Fall 2025. Hosted on GitHub Pages.</div>
     </div>
   </footer>
 </body>
