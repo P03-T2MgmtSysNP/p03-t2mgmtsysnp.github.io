@@ -89,3 +89,32 @@ footer {
 }
 .small { font-size: 13px; color: var(--muted); }
 code.inline { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; background: #f4f4f7; border: 1px solid var(--border); padding: 2px 6px; border-radius: 6px; }
+
+/* Team Member Photos */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e6e6ef;
+  margin-bottom: 10px;
+}
+
+.team-name {
+  font-weight: 700;
+}
+
+.team-role {
+  font-size: 13px;
+  color: #525252;
+}
